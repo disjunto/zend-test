@@ -8,7 +8,7 @@
  */
 namespace Zend\Test\PHPUnit\Controller;
 
-use PHPUnit_Framework_TestCase;
+use \PHPUnit\Framework\TestCase;
 use PHPUnit_Framework_ExpectationFailedException;
 use Zend\Console\Console;
 use Zend\EventManager\StaticEventManager;
@@ -20,7 +20,7 @@ use Zend\Stdlib\Parameters;
 use Zend\Stdlib\ResponseInterface;
 use Zend\Uri\Http as HttpUri;
 
-abstract class AbstractControllerTestCase extends PHPUnit_Framework_TestCase
+abstract class AbstractControllerTestCase extends TestCase
 {
     /**
      * @var \Zend\Mvc\ApplicationInterface
